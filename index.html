@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1{
+            margin: 0 0 30px 0;
+        }
+        .buttons {
+            margin: 10px 0 30px 0;
+        }
+        button {
+            cursor: pointer;
+            margin: 0;
+            padding: 10px 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th:not(:last-child), td:not(:last-child) {
+            border: 2px solid grey;
+        } 
+        th:not(:last-child) {
+            padding-top: 10px;
+            padding-bottom: 5px;
+            width: 30%;
+        }
+        td {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Привет Аноним</h1>
+
+    <div class="buttons">
+        <button class="button-registation">Зарегистрировать пользователя</button>
+        <button class="button-authorization">Авторизоваться</button>
+    </div>
+
+    <table class="users-table">
+        <tbody>
+            <tr>
+                <th>Имя</th>
+                <th>Фамилия</th>
+                <th>Дата регистрация</th>
+                <th></th>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="scripts/script.js"></script>
+    
+</body>
+</html>
